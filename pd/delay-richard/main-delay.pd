@@ -1,0 +1,15 @@
+#N canvas 143 142 1307 806 10;
+#X obj 37 14 delay01 1;
+#X obj 346 12 delay01 2;
+#X obj 656 13 delay01 3;
+#X obj 966 13 delay01 4;
+#X obj 34 323 delay01 5;
+#X obj 346 323 delay01 6;
+#X obj 657 323 delay01 7;
+#X obj 967 323 delay01 8;
+#N canvas 57 82 450 300 works 1;
+#X obj 94 107 catch~ out01;
+#X obj 94 129 dac~ 1 2 3 4 5 6 7 8;
+#X connect 0 0 1 0;
+#X connect 0 0 1 1;
+#X restore 52 670 pd works;
