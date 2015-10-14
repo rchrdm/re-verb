@@ -1,0 +1,7 @@
+1: pd starten
+
+2: media -- portaudio
+
+3: media -- audio settings -- input und output auf focusrite umstellen
+
+4: media -- test audio and midi -- 

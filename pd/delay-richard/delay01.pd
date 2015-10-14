@@ -1,4 +1,4 @@
-#N canvas 464 325 743 547 10;
+#N canvas 461 330 743 547 10;
 #X obj 11 11 cnv 15 300 300 empty empty empty 20 12 0 14 -204800 -66577
 0;
 #X obj 354 74 adc~ \$1;
@@ -38,7 +38,7 @@
 #X floatatom 400 490 5 0 0 0 - - -, f 5;
 #X obj 400 509 s \$0-del;
 #X obj 361 302 r \$0-delstart;
-#X msg 335 435 stop;
+#X msg 306 416 stop;
 #X obj 247 247 bng 15 250 50 0 empty empty stop 17 7 0 10 -262144 -1
 -1;
 #X obj 90 268 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
@@ -49,6 +49,7 @@
 #X obj 445 230 env~ 8192;
 #X obj 445 252 - 100;
 #X obj 445 210 *~ 0;
+#X obj 329 471 sel 5;
 #X connect 1 0 2 0;
 #X connect 1 0 16 0;
 #X connect 2 0 3 0;
@@ -70,6 +71,7 @@
 #X connect 24 0 27 0;
 #X connect 24 0 26 1;
 #X connect 24 0 20 0;
+#X connect 24 0 38 0;
 #X connect 25 0 12 0;
 #X connect 26 0 25 0;
 #X connect 27 0 28 0;
@@ -83,4 +85,5 @@
 #X connect 36 0 34 0;
 #X connect 37 0 35 0;
 #X connect 37 0 11 0;
+#X connect 38 0 26 0;
 #X coords 0 -1 1 1 300 300 1 10 10;
