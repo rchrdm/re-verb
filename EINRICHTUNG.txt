@@ -1,7 +1,10 @@
-1: pd starten
+1: pd starten (desktop)
 
-2: media -- portaudio
+2: media -- ASIO (via portaudio)
 
-3: media -- audio settings -- input und output auf focusrite umstellen
+3: media -- audio settings -- input und output device auf "ASIO:Focusrite [...]" umstellen
+			      input channels: 8
+			      apply und ok
 
-4: media -- test audio and midi -- 
+4: media -- test audio and midi -- test tones auf 60
+				   mischpult: ton hochfahren (kanal 1+2 und master (gelb))
