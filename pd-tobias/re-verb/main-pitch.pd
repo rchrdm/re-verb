@@ -1,0 +1,38 @@
+#N canvas -8 -8 1366 686 10;
+#N canvas 621 231 450 300 works 0;
+#X obj 118 -1567 *~;
+#X obj 153 -1588 line~;
+#X msg 153 -1616 \$1 100;
+#X floatatom 153 -1639 5 0 0 0 - - -, f 5;
+#X obj 178 -1675 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 91 -1507 dac~;
+#X obj 65 -1606 catch~ summe;
+#X obj 38 -1678 r \$0-main-volume;
+#X obj 163 -1525 env~ 8192;
+#X obj 163 -1503 - 100;
+#X obj 163 -1481 s \$0-main-vu;
+#X connect 0 0 5 1;
+#X connect 0 0 5 0;
+#X connect 0 0 8 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 3 0;
+#X connect 6 0 0 0;
+#X connect 7 0 3 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X restore 25 695 pd works;
+#X obj 8 7 pitch-module01 1;
+#X obj 328 641 hsl 600 30 0 1 0 0 \$0-main-volume empty main-volume
+-2 -8 0 16 -258113 -1 -1 0 1;
+#X obj 320 7 pitch-module01 2;
+#X obj 629 7 pitch-module01 3;
+#X obj 940 7 pitch-module01 4;
+#X obj 7 318 pitch-module01 5;
+#X obj 319 318 pitch-module01 6;
+#X obj 629 317 pitch-module01 7;
+#X obj 940 316 pitch-module01 8;
+#X obj 1260 20 vu 30 600 \$0-main-vu main-volume -1 -8 0 12 -66577
+-1 1 0;

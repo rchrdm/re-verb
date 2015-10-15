@@ -1,6 +1,8 @@
+0: GitHub starten: neueste Version des Ordners synchronisieren
+
 1: pd starten (desktop)
 
-2: media -- ASIO (via portaudio)
+2: media -- ASIO (via portaudio) (schritt 3 öffnet wahrscheinlich automatisch)
 
 3: media -- audio settings -- input und output device auf "ASIO:Focusrite [...]" umstellen
 			      input channels: 8
