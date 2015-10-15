@@ -10,3 +10,8 @@
 
 4: media -- test audio and midi -- test tones auf 60
 				   mischpult: ton hochfahren (kanal 1+2 und master (gelb))
+
+5: file -- recent files (unten)
+   sonst open in: c:/benutzer/tontechnik/re-verb/git/re-verb/pd-richard/delay-patch/main-delay.pd
+							    /pd-tobias/loop-patch/main-loop.pd
+							    	      /pitchshift-patch/main-pitch.pd
