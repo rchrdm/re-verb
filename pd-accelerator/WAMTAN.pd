@@ -53,6 +53,7 @@ zeigen (Console!);
 #X text 237 297 Winkel X Y Z;
 #X text 260 351 comment;
 #X text 323 330 Beschleunigung X Y Z;
+#X msg 494 505 hallo;
 #X connect 1 0 3 0;
 #X connect 1 2 0 0;
 #X connect 2 0 1 0;
