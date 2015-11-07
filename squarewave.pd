@@ -1,0 +1,88 @@
+#N canvas 407 172 583 461 10;
+#N canvas 0 22 373 471 square 0;
+#X obj 40 248 *~;
+#X obj 40 371 cos~;
+#X obj 40 106 *~ 2;
+#X obj 40 132 -~ 1;
+#X obj 40 280 clip~ -1 1;
+#X obj 40 161 abs~;
+#X obj 40 186 *~ 2;
+#X obj 40 212 -~ 1;
+#X obj 40 308 *~ 0.25;
+#X obj 40 341 +~ 0.25;
+#X obj 237 63 inlet~;
+#X obj 40 404 outlet~;
+#X obj 40 63 inlet~;
+#X obj 237 171 max~ 1;
+#X text 41 31 phasor oder line input (0-1);
+#X text 241 31 input > 1;
+#X connect 0 0 4 0;
+#X connect 1 0 11 0;
+#X connect 2 0 3 0;
+#X connect 3 0 5 0;
+#X connect 4 0 8 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 0;
+#X connect 8 0 9 0;
+#X connect 9 0 1 0;
+#X connect 10 0 13 0;
+#X connect 12 0 2 0;
+#X connect 13 0 0 1;
+#X restore 37 168 pd square;
+#X obj 138 44 hsl 128 15 0 127 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 0 1;
+#X obj 135 64 / 127;
+#X obj 179 132 expr pow(4 \, $f1);
+#X floatatom 179 154 5 0 0 0 - - -, f 5;
+#X obj 135 86 t f f;
+#X msg 179 173 \$1 200;
+#X obj 179 195 line~;
+#X floatatom 135 206 5 0 0 0 - - -, f 5;
+#X msg 135 225 \$1 200;
+#X obj 135 247 line~;
+#X obj 135 269 *~;
+#X obj 37 303 *~;
+#X obj 37 325 *~ 0.5;
+#X obj 37 347 dac~;
+#N canvas 0 22 450 278 (subpatch) 0;
+#X array wave 100 float 5;
+#A 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0.999956
+0.999838 0.999629 0.999328 0.998909 0.998399 0.997799 0.997109 0.996327
+0.995426 0.994436 0.993356 0.992185 0.990924 0.989544 0.988076 0.986518
+0.98487 0.983132 0.981278 0.979334 0.977302 0.975182 0.972972 0.970646
+0.968232 0.965731 0.963143 0.960466 0.957675 0.954797 0.951833 0.948783
+0.945645 0.942395 0.93906 0.93564 0.932136 0.928545 0.924845 0.92106
+0.917193 0.913242 0.909208 0.905065 0.90084 0.896534 0.892147 0.887679
+0.883104 0.878449 0.873715 0.868902 0.86401 0.859014 0.853941 0.84879
+0.843563 0.838259 0.832854 0.827375 0.82182 0.816191 0.810488 0.804687
+0.798814 0.792869 0.786852 0.780763 0.77458 0.768328 0.762006;
+#X coords 0 1 99 -1 200 140 1;
+#X restore 332 246 graph;
+#X obj 196 381 metro 100;
+#X obj 196 403 tabwrite~ wave;
+#X obj 198 359 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 1
+1;
+#X obj 177 110 + 0.1;
+#X obj 37 135 phasor~ 60;
+#X connect 0 0 12 0;
+#X connect 0 0 17 0;
+#X connect 1 0 2 0;
+#X connect 2 0 5 0;
+#X connect 3 0 4 0;
+#X connect 4 0 6 0;
+#X connect 5 0 8 0;
+#X connect 5 1 19 0;
+#X connect 6 0 7 0;
+#X connect 7 0 0 1;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 10 0 11 1;
+#X connect 11 0 12 1;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 16 0 17 0;
+#X connect 18 0 16 0;
+#X connect 19 0 3 0;
+#X connect 20 0 0 0;
