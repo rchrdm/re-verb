@@ -1,5 +1,6 @@
-#N canvas 0 0 1247 716 10;
+#N canvas 542 103 1247 716 10;
 #X obj 236 246 coll;
+#C restore;
 #N canvas 0 50 1008 714 loadasciidata 0;
 #X obj 104 320 textfile;
 #X msg 232 332 bang;
@@ -200,6 +201,7 @@
 #X obj 523 564 t b b;
 #X obj 391 783 outlet MESSAGE_ENDED;
 #X text 57 -52 Version 3.2;
+#X obj 92 358 print;
 #X connect 0 0 4 0;
 #X connect 1 0 0 0;
 #X connect 2 0 1 0;
