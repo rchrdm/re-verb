@@ -1,11 +1,16 @@
-#N canvas 306 57 959 707 10;
+#N canvas 420 171 831 477 10;
 #X obj 513 212 print ERROR;
 #X obj 402 179 convert.ascii2pd CR;
-#N canvas 407 141 905 623 in&out 0;
+#N canvas 401 151 905 623 in&out 0;
 #X obj 114 116 list-extend;
 #X obj 191 77 sel 10;
+<<<<<<< HEAD
 #X msg 386 56 55 50 48 48 32 45 49 52 50 52 48 32 51 49 51 50 32 52
 52 57 32 52 49 53 32 45 55 54 52 13;
+=======
+#X msg 386 56 49 50 51 50 32 49 48 53 53 54 32 57 48 48 48 32 45 49
+52 55 32 49 51 50 32 45 50 52 52;
+>>>>>>> master
 #X obj 190 157 prepend set;
 #X obj 193 236 gate;
 #X msg 126 209 0;
@@ -52,8 +57,12 @@ zeigen (Console!);
 #X text 260 351 comment;
 #X text 323 330 Beschleunigung X Y Z;
 #X msg 494 505 hallo;
+<<<<<<< HEAD
 #X msg 229 74 open 3;
 #X obj 402 107 comport 3 115200;
+=======
+#X obj 235 185 print;
+>>>>>>> master
 #X connect 1 0 3 0;
 #X connect 1 2 0 0;
 #X connect 2 0 1 0;
