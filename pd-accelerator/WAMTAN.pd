@@ -4,13 +4,8 @@
 #N canvas 401 151 905 623 in&out 0;
 #X obj 114 116 list-extend;
 #X obj 191 77 sel 10;
-<<<<<<< HEAD
-#X msg 386 56 55 50 48 48 32 45 49 52 50 52 48 32 51 49 51 50 32 52
-52 57 32 52 49 53 32 45 55 54 52 13;
-=======
-#X msg 386 56 49 50 51 50 32 49 48 53 53 54 32 57 48 48 48 32 45 49
-52 55 32 49 51 50 32 45 50 52 52;
->>>>>>> master
+#X msg 386 56 51 56 48 32 45 49 50 53 52 52 32 55 54 55 50 32 45 51
+51 32 49 49 54 32 45 50 49 51 13;
 #X obj 190 157 prepend set;
 #X obj 193 236 gate;
 #X msg 126 209 0;
@@ -40,6 +35,7 @@
 #X floatatom 455 328 5 0 0 0 - - -;
 #X floatatom 497 329 5 0 0 0 - - -;
 #X floatatom 536 329 5 0 0 0 - - -;
+#X obj 402 107 comport 0 115200;
 #X msg 229 97 close;
 #X text 63 42 comment;
 #X text 63 388 ACHTUNG: Die Datei "convert.ascii2pd.pd" muss im gleichen
@@ -57,13 +53,11 @@ zeigen (Console!);
 #X text 260 351 comment;
 #X text 323 330 Beschleunigung X Y Z;
 #X msg 494 505 hallo;
-<<<<<<< HEAD
-#X msg 229 74 open 3;
-#X obj 402 107 comport 3 115200;
-=======
 #X obj 235 185 print;
->>>>>>> master
+#X msg 229 74 open 3;
+#X obj 655 330 s controller;
 #X connect 1 0 3 0;
+#X connect 1 0 29 0;
 #X connect 1 2 0 0;
 #X connect 2 0 1 0;
 #X connect 3 0 4 0;
@@ -72,7 +66,7 @@ zeigen (Console!);
 #X connect 3 3 8 0;
 #X connect 3 4 9 0;
 #X connect 3 5 10 0;
-#X connect 7 0 27 0;
-#X connect 11 0 27 0;
-#X connect 26 0 27 0;
-#X connect 27 0 2 0;
+#X connect 7 0 11 0;
+#X connect 11 0 2 0;
+#X connect 12 0 11 0;
+#X connect 28 0 11 0;
